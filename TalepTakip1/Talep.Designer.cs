@@ -40,6 +40,8 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel4
@@ -94,7 +96,7 @@
             this.guna2Button2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button2.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(642, 466);
+            this.guna2Button2.Location = new System.Drawing.Point(675, 466);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.BorderRadius = 10;
@@ -151,7 +153,7 @@
             this.guna2Button1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button1.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button1.Location = new System.Drawing.Point(510, 466);
+            this.guna2Button1.Location = new System.Drawing.Point(543, 466);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.BorderRadius = 10;
@@ -215,11 +217,25 @@
             this.guna2HtmlLabel8.Text = "Hakkında...";
             this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::TalepTakip1.Properties.Resources.T_C__Adalet_Bakanlığı_Yeni_Logo_2018;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 80);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 29;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
             // Talep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1347, 553);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -239,6 +255,7 @@
             this.Load += new System.EventHandler(this.Talep_Load);
             this.Enter += new System.EventHandler(this.guna2Button2_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Talep_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,5 +274,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

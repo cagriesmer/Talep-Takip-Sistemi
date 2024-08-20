@@ -40,7 +40,7 @@ namespace TalepTakip1
 
         private void Users_Load(object sender, EventArgs e)
         {
-            guna2HtmlLabel1.Text = $"{uName}";
+            guna2HtmlLabel1.Text = $"Aktif kullanıcı: {uName}";
 
             List<User> users = userService.GetAllUsers();
 

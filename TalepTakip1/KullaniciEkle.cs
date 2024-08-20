@@ -84,11 +84,13 @@ namespace TalepTakip1
             string soyisim = guna2TextBox4.Text;
             string kullaniciAdi = guna2TextBox1.Text;
             string sifre = guna2TextBox2.Text;
+            string sifreTekrar = guna2TextBox5.Text;
 
             if (string.IsNullOrWhiteSpace(isim) ||
                 string.IsNullOrWhiteSpace(soyisim) ||
                 string.IsNullOrWhiteSpace(kullaniciAdi) ||
-                string.IsNullOrWhiteSpace(sifre))
+                string.IsNullOrWhiteSpace(sifre) ||
+                string.IsNullOrWhiteSpace(sifreTekrar))
             {
                 MessageBox.Show("Lütfen tüm alanları doldurun.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -97,6 +99,12 @@ namespace TalepTakip1
             if (!System.Text.RegularExpressions.Regex.IsMatch(kullaniciAdi, "^[a-zA-Z0-9]+$"))
             {
                 MessageBox.Show("Kullanıcı adı sadece İngilizce karakterler ve rakamlardan oluşmalıdır.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            // Şifre doğrulama
+            if (sifre != sifreTekrar)
+            {
+                MessageBox.Show("Şifreler eşleşmiyor.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -128,6 +136,7 @@ namespace TalepTakip1
                     guna2TextBox2.Text = "";
                     guna2TextBox3.Text = "";
                     guna2TextBox4.Text = "";
+                    guna2TextBox5.Text = "";
                     guna2ComboBox1.SelectedIndex = -1;
                 }
                 else

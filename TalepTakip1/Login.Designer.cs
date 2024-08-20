@@ -129,10 +129,10 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(59, 218);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(76, 218);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(322, 44);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(286, 40);
             this.guna2HtmlLabel3.TabIndex = 6;
             this.guna2HtmlLabel3.Text = "Talep Takip Sistemi";
             this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);

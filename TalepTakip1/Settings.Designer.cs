@@ -46,6 +46,8 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -311,11 +313,25 @@
             this.guna2HtmlLabel8.Text = "Hakkında...";
             this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::TalepTakip1.Properties.Resources.T_C__Adalet_Bakanlığı_Yeni_Logo_2018;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 80);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 30;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1347, 553);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2HtmlLabel7);
@@ -339,6 +355,7 @@
             this.Text = "Kullanıcı Ayarları";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Setting_Closing);
             this.Load += new System.EventHandler(this.Settings_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,5 +380,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

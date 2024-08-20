@@ -54,7 +54,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(87, 222);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(87, 211);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(214, 33);
             this.guna2HtmlLabel2.TabIndex = 1;
