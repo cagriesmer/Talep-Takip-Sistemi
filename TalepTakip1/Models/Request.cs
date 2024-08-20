@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TalepTakip1.Models
+{
+    internal class Request
+    {
+        public string UserName { get; set; }
+        public DateTime ReqDate { get; set; }
+        public string ReqDescription { get; set; }
+        public string ReqTitle { get; set; }
+        public string State { get; set; }
+        public string ReqId { get; set; }
+        public string FileName { get; set; }
+        public byte[] FileData { get; set; }
+        public string FileType { get; set; }
+        public string Description { get; set; }
+
+        public Request() { }
+
+        public Request(string userName, DateTime reqDate, string reqDescription, string reqTitle, string requestID, string fileName, byte[] fileData, string fileType, string description)
+        {
+            UserName = userName;
+            ReqDate = reqDate;
+            ReqDescription = reqDescription;
+            ReqTitle = reqTitle;
+            ReqId = requestID;
+            FileName = fileName;
+            FileData = fileData;
+            FileType = fileType;
+            Description = description;
+        }
+    }
+}
