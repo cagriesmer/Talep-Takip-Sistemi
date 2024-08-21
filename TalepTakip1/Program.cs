@@ -20,6 +20,8 @@ namespace TalepTakip1
         
             Application.Run(new Login());
 
+
+
         }
     }
 }
