@@ -29,7 +29,7 @@ namespace TalepTakip
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/cagriesmer/TalepTakip");
+            System.Diagnostics.Process.Start("https://github.com/cagriesmer/TalepTakip/blob/master/README.md");
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

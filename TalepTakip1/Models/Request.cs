@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TalepTakip.Models
 {
-    internal class Request
+    public class Request
     {
         public string UserName { get; set; }
         public DateTime ReqDate { get; set; }

@@ -120,9 +120,10 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Ben Ondokuz Mayıs Üniversitesi Bilgisayar
 Mühendisliği Bölümü öğrencisi Çağrı Esmer.
-Yaz stajım süresince Ordu Adliyesi bünyesinde
-bu programı geliştirdim. Siz değerli kullanıcılara
-en iyi deneyimi sunmayı hedefliyorum.
+2024 Yılı Ağustos ayında yaz stajım süresince 
+Ordu Adliyesi bünyesinde bu programı geliştirdim.
+Siz değerli kullanıcılara en iyi deneyimi sunmayı
+hedefliyorum.
 
 Bana aşağıdaki kanallar aracılığıyla ulaşabilirsiniz:</value>
   </data>
@@ -132,7 +133,8 @@ tutulabilmesi, isteklerin net olarak iletilip gerekli
 işlemlerin yapılabilmesi amacıyla Ordu Adliyesine
 özel olarak geliştirilmiştir.
 
-Programın kaynak kodlarına ulaşmak için:</value>
+Program hakkında detaylı bilgi ve kaynak kodlarına
+ulaşmak için:</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
