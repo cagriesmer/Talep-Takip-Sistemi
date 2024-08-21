@@ -42,7 +42,7 @@ namespace TalepTakip
 
             // Kullanıcının rolünü al
             User currentUser = userService.GetUserByUsername(uName);
-            List<TalepTakip.Models.Request> requests;
+            List<TalepTakip.Models.Request> requests; // Talepleri tutacak liste
 
             if (currentUser.userRole == "Personel")
             {
@@ -62,12 +62,6 @@ namespace TalepTakip
                 guna2Button3.Visible = true;
                 // Yönetici ve müdür rolü için onayla butonunu göster
                 guna2DataGridView1.Columns["Column6"].Visible = true;
-
-                // Yönetici için talepleri düzenli olarak kontrol et
-                Timer timer = new Timer();
-                timer.Interval = (5000); // 5 Saniyede bir kontrol edecek
-                timer.Tick += Timer_Tick;
-                timer.Start();
             }
             else
             {
@@ -246,41 +240,6 @@ namespace TalepTakip
         {
             About aboutForm = new About();
             aboutForm.Show();
-        }
-
-        private List<TalepTakip.Models.Request> MevcutRequests = new List<TalepTakip.Models.Request>();
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            List<TalepTakip.Models.Request> yeniRequests = userService.GetAllRequests(); // Tüm talepleri al
-
-            var yeniTalep = yeniRequests.Except(MevcutRequests, new RequestComparer()).ToList();
-            // Yeni gelen talebi kontrol et
-            if (yeniTalep.Any())
-            {
-                // Yeni talep varsa
-                NotifyIcon notifyIcon = new NotifyIcon();
-                notifyIcon.Visible = true;
-                notifyIcon.Icon = SystemIcons.Information;
-                notifyIcon.BalloonTipTitle = "Yeni Talep";
-                notifyIcon.BalloonTipText = "Yeni bir talep geldi.";
-                notifyIcon.ShowBalloonTip(3000);
-
-                // Mevcut talepleri güncelle
-                MevcutRequests = yeniRequests;
-
-            }
-        }
-        public class RequestComparer : IEqualityComparer<TalepTakip.Models.Request>
-        {
-            public bool Equals(TalepTakip.Models.Request x, TalepTakip.Models.Request y)
-            {
-                return x.ReqId == y.ReqId;
-            }
-
-            public int GetHashCode(TalepTakip.Models.Request obj)
-            {
-                return obj.ReqId.GetHashCode();
-            }
         }
     }
 }
