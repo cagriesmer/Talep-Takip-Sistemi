@@ -74,6 +74,9 @@ namespace TalepTakip1
                 fileData = null;
                 fileType = null;
                 guna2HtmlLabel5.Visible = false;
+
+                notifyIcon1.ShowBalloonTip(3000);
+                notifyIcon1.Visible = true;
             }
             else
             {

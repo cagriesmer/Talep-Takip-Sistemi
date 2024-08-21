@@ -20,18 +20,5 @@ namespace TalepTakip1.Models
         public string Description { get; set; }
 
         public Request() { }
-
-        public Request(string userName, DateTime reqDate, string reqDescription, string reqTitle, string requestID, string fileName, byte[] fileData, string fileType, string description)
-        {
-            UserName = userName;
-            ReqDate = reqDate;
-            ReqDescription = reqDescription;
-            ReqTitle = reqTitle;
-            ReqId = requestID;
-            FileName = fileName;
-            FileData = fileData;
-            FileType = fileType;
-            Description = description;
-        }
     }
 }
