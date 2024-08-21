@@ -3,11 +3,11 @@ using System;
 using System.Configuration;
 using System.Windows.Forms;
 using BCrypt.Net;
-using TalepTakip1.Models;
+using TalepTakip.Models;
 using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace TalepTakip1
+namespace TalepTakip
 {
     public partial class Login : Form
     {

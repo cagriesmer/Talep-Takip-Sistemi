@@ -1,4 +1,4 @@
-﻿namespace TalepTakip1
+﻿namespace TalepTakip
 {
     partial class About
     {

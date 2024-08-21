@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Web.Security;
 using System.Windows.Forms;
 
-namespace TalepTakip1.Models
+namespace TalepTakip.Models
 {
     internal class UserRepository
     {
@@ -181,9 +181,9 @@ namespace TalepTakip1.Models
         }
 
         // Kullanıcı adına göre talepleri getir
-        public List<TalepTakip1.Models.Request> GetRequestsByUser(string userName)
+        public List<TalepTakip.Models.Request> GetRequestsByUser(string userName)
         {
-            List<TalepTakip1.Models.Request> requests = new List<TalepTakip1.Models.Request>();
+            List<TalepTakip.Models.Request> requests = new List<TalepTakip.Models.Request>();
             string query = "SELECT * FROM requests WHERE userName = @userName";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -216,9 +216,9 @@ namespace TalepTakip1.Models
         }
 
         // Tüm talepleri getir
-        public List<TalepTakip1.Models.Request> GetAllRequests()
+        public List<TalepTakip.Models.Request> GetAllRequests()
         {
-            List<TalepTakip1.Models.Request> requests = new List<TalepTakip1.Models.Request>();
+            List<TalepTakip.Models.Request> requests = new List<TalepTakip.Models.Request>();
             string query = "SELECT * FROM requests";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))

@@ -6,10 +6,10 @@ using System.Security.Cryptography.X509Certificates;
 using System.Web.Security;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using TalepTakip1.Models;
+using TalepTakip.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace TalepTakip1
+namespace TalepTakip
 {
     public partial class KullaniciEkle : Form
     {

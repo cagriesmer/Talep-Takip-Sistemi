@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TalepTakip1.Models;
+using TalepTakip.Models;
 
-namespace TalepTakip1
+namespace TalepTakip
 {
     public partial class Talep : Form
     {

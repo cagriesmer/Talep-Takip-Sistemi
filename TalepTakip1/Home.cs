@@ -10,10 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TalepTakip1.Models;
+using TalepTakip.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace TalepTakip1
+namespace TalepTakip
 {
     public partial class Home : Form
     {
@@ -42,7 +42,7 @@ namespace TalepTakip1
 
             // Kullanıcının rolünü al
             User currentUser = userService.GetUserByUsername(uName);
-            List<TalepTakip1.Models.Request> requests;
+            List<TalepTakip.Models.Request> requests;
 
             if (currentUser.userRole == "Personel")
             {
@@ -66,7 +66,7 @@ namespace TalepTakip1
             else
             {
                 // Diğer roller için boş liste döndür
-                requests = new List<TalepTakip1.Models.Request>();
+                requests = new List<TalepTakip.Models.Request>();
                 // Diğer roller için kayıt ekle butonunu gizle
                 guna2Button3.Visible = false;
                 // Diğer roller için onayla butonunu gizle

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TalepTakip1
+namespace TalepTakip
 {
     public partial class About : Form
     {

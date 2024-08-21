@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TalepTakip1.Models;
+using TalepTakip.Models;
 
-namespace TalepTakip1.Models
+namespace TalepTakip.Models
 {
     internal class UserService
     {
@@ -80,13 +80,13 @@ namespace TalepTakip1.Models
         }
         
         // Kullanıcıya ait talepleri getir
-        public List<TalepTakip1.Models.Request> GetRequestsByUser(string userName)
+        public List<TalepTakip.Models.Request> GetRequestsByUser(string userName)
         {
             return userRepository.GetRequestsByUser(userName);
         }
 
         // Tüm talepleri getir
-        public List<TalepTakip1.Models.Request> GetAllRequests()
+        public List<TalepTakip.Models.Request> GetAllRequests()
         {
             return userRepository.GetAllRequests();
         }

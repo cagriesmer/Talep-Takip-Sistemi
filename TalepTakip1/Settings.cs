@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using TalepTakip1.Models;
+using TalepTakip.Models;
 
-namespace TalepTakip1
+namespace TalepTakip
 {
     public partial class Settings : Form
     {

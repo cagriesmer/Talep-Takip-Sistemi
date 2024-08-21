@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TalepTakip1.Models
+namespace TalepTakip.Models
 {
     internal class NotificationService
     {
