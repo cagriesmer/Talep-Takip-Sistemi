@@ -38,7 +38,6 @@ namespace TalepTakip.Models
 
             if (user == null)
             {
-                MessageBox.Show($"Kullanıcı {username} bulunamadı.");
                 return false;
             }
 

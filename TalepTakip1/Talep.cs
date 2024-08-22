@@ -29,7 +29,6 @@ namespace TalepTakip
 
             this.KeyPreview = true;
             this.KeyDown += new KeyEventHandler(Talep_KeyDown);
-
         }
 
         // Enter tuşuna basıldığında button1_Click olayını tetikle
@@ -59,7 +58,7 @@ namespace TalepTakip
 
             if (string.IsNullOrWhiteSpace(reqDescription) || string.IsNullOrWhiteSpace(reqTitle))
             {
-                MessageBox.Show("Başlık ve açıklama kutularının doldurulması gerekmektedir.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Başlık ve açıklama kutularının doldurulması gerekmektedir.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 

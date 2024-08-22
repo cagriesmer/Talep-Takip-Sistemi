@@ -254,7 +254,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Talep__FormClosing);
             this.Load += new System.EventHandler(this.Talep_Load);
             this.Enter += new System.EventHandler(this.guna2Button2_Click);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Talep_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
