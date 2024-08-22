@@ -133,6 +133,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\NotificationService.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
