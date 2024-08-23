@@ -34,8 +34,12 @@ Projede .NET Framework 4.5 kullanılmıştır. Ayrıca 4.7.2 veya 4.8 sürümler
 ## 📸 Ekran Görüntüleri
 - Giriş ekranı
 <img src = "Images/1.png"/>
-
-<img src="https://github.com/user-attachments/assets/16a2cfaa-257c-4075-8a61-6301bc7e768e" alt="1" width="800"/>
+- Personel ana sayfa
+<img src = "Images/2.png"/>
+- Talep girişi
+<img src = "Images/3.png"/>
+- Yönetici ana sayfa
+<img src = "Images/1.png"/>
 
 ## 📧 İletişim
 cagriesmer7@gmail.com
