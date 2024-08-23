@@ -100,5 +100,12 @@ namespace TalepTakip
             About aboutForm = new About();
             aboutForm.Show();
         }
+
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        {
+            DatabaseConn databaseConnForm = new DatabaseConn();
+            databaseConnForm.Show();
+            this.Hide();
+        }
     }
 }
