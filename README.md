@@ -39,15 +39,15 @@ Projede .NET Framework 4.5 kullanılmıştır. Ayrıca 4.7.2 veya 4.8 sürümler
 - Talep girişi
 <img src = "Images/3.png"/>
 - Yönetici ana sayfa
-<img src = "Images/11.png"/>
+<img src = "Images/4.png"/>
 - Kullanıcı ekleme/düzenleme
-<img src = "Images/8.png"/>
+<img src = "Images/5.png"/>
 - Kullanıcı listesi
-<img src = "Images/7.png"/>
+<img src = "Images/6.png"/>
 - Talep düzenleme
-<img src = "Images/9.png"/>
+<img src = "Images/7.png"/>
 - Yeni talep bildirimi
-<img src = "Images/10.png"/>
+<img src = "Images/8.png"/>
 
 ## 📧 İletişim
 cagriesmer7@gmail.com
