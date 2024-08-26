@@ -299,8 +299,8 @@
             // 
             // KullaniciEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1347, 553);
             this.Controls.Add(this.guna2TextBox5);
             this.Controls.Add(this.label6);
