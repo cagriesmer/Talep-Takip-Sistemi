@@ -67,13 +67,16 @@ namespace TalepTakip
             if (isSuccess)
             {
                 MessageBox.Show("Talep başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                guna2TextBox1.Text = "";
-                guna2TextBox2.Text = "";
-                filePath = null;
-                fileData = null;
-                fileType = null;
-                guna2HtmlLabel5.Visible = false;
+                //guna2TextBox1.Text = "";
+                //guna2TextBox2.Text = "";
+                //filePath = null;
+                //fileData = null;
+                //fileType = null;
+                //guna2HtmlLabel5.Visible = false;
 
+                Home home_form = new Home(uName);
+                home_form.Show();
+                this.Hide();
             }
             else
             {
