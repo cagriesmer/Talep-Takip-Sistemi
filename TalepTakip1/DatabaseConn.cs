@@ -28,11 +28,9 @@ namespace TalepTakip
             // Kullanıcıdan alınan bilgiler
             string server = guna2TextBox1.Text;
             string database = guna2TextBox2.Text;
-            //string userId = guna2TextBox3.Text;
-            //string password = guna2TextBox4.Text;
 
             // Connection string'i dinamik olarak oluşturma
-            string connectionString = $"Server={server};Database={database};User Id=root;Password=root;Pooling=true;SslMode=none;";
+            string connectionString = $"Server={server};Database={database};User Id=root;Password=;Pooling=true;SslMode=none;";
 
             try
             {
