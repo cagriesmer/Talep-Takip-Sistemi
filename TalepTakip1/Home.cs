@@ -1,17 +1,20 @@
 ﻿using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
+using OfficeOpenXml;
 using Org.BouncyCastle.Asn1.Ocsp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TalepTakip.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.IO;
 
 namespace TalepTakip
 {
@@ -264,6 +267,66 @@ namespace TalepTakip
             Home homeForm = new Home(uName);
             homeForm.Show();
             this.Hide();    
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            // Home_load ile gelen requests listesini al
+            List<TalepTakip.Models.Request> requests = userService.GetAllRequests();
+
+            // Eğer requests listesi doluysa dışa aktar işlemine başla
+            if (requests != null && requests.Count > 0)
+            {
+                // Excel dosyasına yazma
+                using (ExcelPackage pck = new ExcelPackage())
+                {
+                    ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Requests");
+
+                    // Başlık satırlarını oluştur
+                    ws.Cells[1, 1].Value = "Talep ID";
+                    ws.Cells[1, 2].Value = "Talep Başlığı";
+                    ws.Cells[1, 3].Value = "Talep Açıklaması";
+                    ws.Cells[1, 4].Value = "Kullanıcı Adı";
+                    ws.Cells[1, 5].Value = "Durum";
+                    ws.Cells[1, 6].Value = "Talep Tarihi";
+                    ws.Cells[1, 7].Value = "Dosya Adı";
+                    ws.Cells[1, 8].Value = "Açıklama";
+
+
+                    // Listeyi satır satır Excel'e yaz
+                    for (int i = 0; i < requests.Count; i++)
+                    {
+                        ws.Cells[i + 2, 1].Value = requests[i].ReqId;
+                        ws.Cells[i + 2, 2].Value = requests[i].ReqTitle;
+                        ws.Cells[i + 2, 3].Value = requests[i].ReqDescription;
+                        ws.Cells[i + 2, 4].Value = requests[i].UserName;
+                        ws.Cells[i + 2, 5].Value = requests[i].State;
+                        ws.Cells[i + 2, 6].Value = requests[i].ReqDate;
+                        ws.Cells[i + 2, 6].Value = requests[i].FileName;
+                        ws.Cells[i + 2, 7].Value = requests[i].Description;
+
+                        // Diğer alanları da ekleyin
+                    }
+
+                    // Dosyayı kaydetme
+                    using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                    {
+                        saveFileDialog.Filter = "Excel Files|*.xlsx";
+                        saveFileDialog.Title = "Excel Dosyası Kaydet";
+
+                        if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                        {
+                            FileInfo fi = new FileInfo(saveFileDialog.FileName);
+                            pck.SaveAs(fi);
+                            MessageBox.Show("Veriler Excel'e başarıyla aktarıldı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Dışa aktarılacak veri yok.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
