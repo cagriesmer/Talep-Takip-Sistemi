@@ -257,5 +257,13 @@ namespace TalepTakip
             About aboutForm = new About();
             aboutForm.Show();
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            // Listeyi yeniden yükle
+            Home homeForm = new Home(uName);
+            homeForm.Show();
+            this.Hide();    
+        }
     }
 }

@@ -115,12 +115,6 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseConn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DatabaseConn.Designer.cs">
-      <DependentUpon>DatabaseConn.cs</DependentUpon>
-    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,9 +161,6 @@
     </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DatabaseConn.resx">
-      <DependentUpon>DatabaseConn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

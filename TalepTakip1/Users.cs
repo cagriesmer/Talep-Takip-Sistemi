@@ -111,5 +111,13 @@ namespace TalepTakip
             About about = new About();
             about.Show();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            // Sayfayı yenile
+            Users usersForm = new Users(uName);
+            usersForm.Show();
+            this.Hide();
+        }
     }
 }
