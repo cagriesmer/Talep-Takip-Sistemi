@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using TalepTakip.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
@@ -21,6 +22,7 @@ namespace TalepTakip
             InitializeComponent();
             this.uName = uName;
             userService = new UserService(new UserRepository());
+            guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
         }
 
         // Çıkış yap
@@ -103,6 +105,8 @@ namespace TalepTakip
 
             // DataSource'u ayarladıktan veya verileri yükledikten sonra: Tarihe göre sırala
             guna2DataGridView1.Sort(guna2DataGridView1.Columns["Column4"], System.ComponentModel.ListSortDirection.Descending);
+
+            //guna2DataGridView1.DataSource = requests;
         }
         // DataGridView'de onayla butonuna tıklandığında
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -322,6 +326,48 @@ namespace TalepTakip
                         pck.SaveAs(new FileInfo(saveFileDialog.FileName));
                     }
                 }
+            }
+        }
+        // Liste üzerinde arama yapma
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (requests != null)
+            {
+                string searchText = guna2TextBox1.Text.ToLower();
+                var filteredRequests = requests.Where(r =>
+                    r.UserName.ToLower().Contains(searchText) ||
+                    r.ReqTitle.ToLower().Contains(searchText) ||
+                    r.ReqDescription.ToLower().Contains(searchText) ||
+                    r.State.ToLower().Contains(searchText) ||
+                    r.ReqDate.ToLower().Contains(searchText) ||
+                    r.FileName.ToLower().Contains(searchText) ||
+                    r.CompDate.ToLower().Contains(searchText) ||
+                    r.Description.ToLower().Contains(searchText)
+                ).ToList();
+
+                guna2DataGridView1.Rows.Clear();
+
+                foreach (var request in filteredRequests)
+                {
+                    int rowIndex = guna2DataGridView1.Rows.Add();
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column1"].Value = request.UserName;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column2"].Value = request.ReqTitle;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column3"].Value = request.ReqDescription;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column4"].Value = request.ReqDate;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column5"].Value = request.State;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column6"].Value = "Tamamla";
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column7"].Value = request.ReqId;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column8"].Value = request.FileName;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column9"].Value = request.Description;
+                    guna2DataGridView1.Rows[rowIndex].Cells["Column10"].Value = request.CompDate;
+
+                    if (request.State == "Beklemede")
+                    {
+                        guna2DataGridView1.Rows[rowIndex].DefaultCellStyle.BackColor = Color.Yellow;
+                    }
+                }
+
+                guna2DataGridView1.Sort(guna2DataGridView1.Columns["Column4"], System.ComponentModel.ListSortDirection.Descending);
             }
         }
     }

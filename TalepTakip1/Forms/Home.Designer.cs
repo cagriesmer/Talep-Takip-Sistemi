@@ -37,6 +37,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -48,16 +58,8 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
@@ -148,6 +150,88 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column1.HeaderText = "Kullanıcı Adı";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 120;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "requestId";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column2.HeaderText = "Talep Başlığı";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column3.HeaderText = "Talep Açıklaması";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 250;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column4.HeaderText = "Talep Tarihi";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 99;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column8.HeaderText = "Yüklenen Dosya";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column8.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column5.HeaderText = "Durumu";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.Width = 99;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column9.HeaderText = "Açıklama";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 205;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column6.HeaderText = "Onay";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column6.Width = 99;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Tamamlanma Tarihi";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
             // 
             // guna2ContextMenuStrip1
             // 
@@ -370,93 +454,40 @@
             this.guna2Button5.Text = "Dışa Aktar";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // Column1
+            // directorySearcher1
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column1.HeaderText = "Kullanıcı Adı";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 120;
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
-            // Column7
+            // guna2TextBox1
             // 
-            this.Column7.HeaderText = "requestId";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Visible = false;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column2.HeaderText = "Talep Başlığı";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column3.HeaderText = "Talep Açıklaması";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 250;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column4.HeaderText = "Talep Tarihi";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 99;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column8.HeaderText = "Yüklenen Dosya";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column8.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column5.HeaderText = "Durumu";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.Width = 99;
-            // 
-            // Column9
-            // 
-            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column9.HeaderText = "Açıklama";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 205;
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column6.HeaderText = "Onay";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column6.Width = 99;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Tamamlanma Tarihi";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
+            this.guna2TextBox1.BorderRadius = 10;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "Arama...";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(332, 23);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(268, 32);
+            this.guna2TextBox1.TabIndex = 33;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1347, 553);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2PictureBox1);
@@ -510,5 +541,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
