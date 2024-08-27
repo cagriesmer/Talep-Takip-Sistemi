@@ -279,7 +279,30 @@ namespace TalepTakip
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            ExportRequestsToExcel(requests);
+            //ExportRequestsToExcel(requests);
+            List<TalepTakip.Models.Request> filteredRequests = new List<TalepTakip.Models.Request>();
+
+            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+            {
+                if (row.Cells["Column1"].Value != null) // Boş satırları atla
+                {
+                    TalepTakip.Models.Request request = new TalepTakip.Models.Request
+                    {
+                        ReqId = row.Cells["Column7"].Value.ToString(),
+                        ReqTitle = row.Cells["Column2"].Value.ToString(),
+                        ReqDescription = row.Cells["Column3"].Value.ToString(),
+                        UserName = row.Cells["Column1"].Value.ToString(),
+                        State = row.Cells["Column5"].Value.ToString(),
+                        ReqDate = row.Cells["Column4"].Value.ToString(),
+                        FileName = row.Cells["Column8"].Value.ToString(),
+                        Description = row.Cells["Column9"].Value.ToString(),
+                        CompDate = row.Cells["Column10"].Value.ToString()
+                    };
+                    filteredRequests.Add(request);
+                }
+            }
+
+            ExportRequestsToExcel(filteredRequests);
         }
 
         // Talepleri dışarı aktarma metodu
@@ -297,29 +320,27 @@ namespace TalepTakip
                         var ws = pck.Workbook.Worksheets.Add("Requests");
 
                         // Başlık satırlarını oluştur
-                        ws.Cells[1, 1].Value = "Talep ID";
+                        ws.Cells[1, 1].Value = "Kullanıcı Adı";
                         ws.Cells[1, 2].Value = "Talep Başlığı";
                         ws.Cells[1, 3].Value = "Talep Açıklaması";
-                        ws.Cells[1, 4].Value = "Kullanıcı Adı";
-                        ws.Cells[1, 5].Value = "Durum";
-                        ws.Cells[1, 6].Value = "Talep Tarihi";
-                        ws.Cells[1, 7].Value = "Dosya Adı";
-                        ws.Cells[1, 8].Value = "Açıklama";
-                        ws.Cells[1, 9].Value = "Tamamlanma Tarihi";
+                        ws.Cells[1, 4].Value = "Durum";
+                        ws.Cells[1, 5].Value = "Talep Tarihi";
+                        ws.Cells[1, 6].Value = "Yüklenmiş Dosya Adı";
+                        ws.Cells[1, 7].Value = "Açıklama";
+                        ws.Cells[1, 8].Value = "Tamamlanma Tarihi";
 
 
                         // Listeyi satır satır Excel'e yaz
                         for (int i = 0; i < requestsList.Count; i++)
                         {
-                            ws.Cells[i + 2, 1].Value = requestsList[i].ReqId;
+                            ws.Cells[i + 2, 1].Value = requestsList[i].UserName;
                             ws.Cells[i + 2, 2].Value = requestsList[i].ReqTitle;
                             ws.Cells[i + 2, 3].Value = requestsList[i].ReqDescription;
-                            ws.Cells[i + 2, 4].Value = requestsList[i].UserName;
-                            ws.Cells[i + 2, 5].Value = requestsList[i].State;
-                            ws.Cells[i + 2, 6].Value = requestsList[i].ReqDate;
-                            ws.Cells[i + 2, 7].Value = requestsList[i].FileName;
-                            ws.Cells[i + 2, 8].Value = requestsList[i].Description;
-                            ws.Cells[i + 2, 9].Value = requestsList[i].CompDate;
+                            ws.Cells[i + 2, 4].Value = requestsList[i].State;
+                            ws.Cells[i + 2, 5].Value = requestsList[i].ReqDate;
+                            ws.Cells[i + 2, 6].Value = requestsList[i].FileName;
+                            ws.Cells[i + 2, 7].Value = requestsList[i].Description;
+                            ws.Cells[i + 2, 8].Value = requestsList[i].CompDate;
                         }
 
                         // Dosyayı kaydetme
