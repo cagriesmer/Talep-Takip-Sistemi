@@ -73,7 +73,7 @@ namespace TalepTakip.Models
 
 
         // Yeni talep ekleme
-        public bool AddRequest(string userName, string reqDescription, string reqTitle, DateTime reqDate, string state, string fileName, byte[] fileData, string fileType)
+        public bool AddRequest(string userName, string reqDescription, string reqTitle, string reqDate, string state, string fileName, byte[] fileData, string fileType)
         {
             return userRepository.AddRequest(userName, reqDescription, reqTitle, reqDate, state, fileName, fileData, fileType);
         }

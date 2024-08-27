@@ -9,7 +9,7 @@ namespace TalepTakip.Models
     internal class Request
     {
         public string UserName { get; set; }
-        public DateTime ReqDate { get; set; }
+        public string ReqDate { get; set; }
         public string ReqDescription { get; set; }
         public string ReqTitle { get; set; }
         public string State { get; set; }

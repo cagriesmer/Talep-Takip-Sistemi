@@ -158,7 +158,7 @@ namespace TalepTakip.Models
         }
 
         // Yeni talep ekle
-        public bool AddRequest(string userName, string reqDescription, string reqTitle, DateTime reqDate, string state, string fileName, byte[] fileData, string fileType)
+        public bool AddRequest(string userName, string reqDescription, string reqTitle, string reqDate, string state, string fileName, byte[] fileData, string fileType)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -202,7 +202,7 @@ namespace TalepTakip.Models
                                 UserName = reader["userName"].ToString(),
                                 ReqDescription = reader["reqDescription"].ToString(),
                                 ReqTitle = reader["reqTitle"].ToString(),
-                                ReqDate = Convert.ToDateTime(reader["reqDate"]),
+                                ReqDate = reader["reqDate"].ToString(),
                                 State = reader["state"].ToString(),
                                 FileName = reader["fileName"].ToString(),
                                 Description = reader["description"].ToString(),
@@ -237,7 +237,7 @@ namespace TalepTakip.Models
                                 UserName = reader["userName"].ToString(),
                                 ReqDescription = reader["reqDescription"].ToString(),
                                 ReqTitle = reader["reqTitle"].ToString(),
-                                ReqDate = Convert.ToDateTime(reader["reqDate"]),
+                                ReqDate = reader["reqDate"].ToString(),
                                 State = reader["state"].ToString(),
                                 FileName = reader["fileName"].ToString(),
                                 Description = reader["description"].ToString(),

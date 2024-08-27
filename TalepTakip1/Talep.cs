@@ -50,7 +50,7 @@ namespace TalepTakip
             string userName = uName; // Giriş yapan kullanıcının adı
             string reqDescription = guna2TextBox1.Text; // TextBox içindeki açıklama
             string reqTitle = guna2TextBox2.Text; // TextBox içindeki Başlık
-            DateTime reqDate = DateTime.Now; // Şu anki zamanı al
+            string reqDate = DateTime.Now.ToString(); // Şu anki zamanı al
             string state = "Beklemede"; // Başlangıç durumu
             string filePath = this.filePath;
             byte[] fileData = this.fileData;
