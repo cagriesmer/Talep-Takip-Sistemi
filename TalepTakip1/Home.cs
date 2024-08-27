@@ -44,7 +44,7 @@ namespace TalepTakip
 
             // Kullanıcının rolünü al
             User currentUser = userService.GetUserByUsername(uName);
-            List<TalepTakip.Models.Request> requests; // Talepleri tutacak liste
+            requests = new List<TalepTakip.Models.Request>(); // Talepleri tutacak liste
 
             if (currentUser.userRole == "Personel")
             {
@@ -129,7 +129,7 @@ namespace TalepTakip
                         string state = cell.Value.ToString(); // Durumu al
                         string description = descriptionCell.Value.ToString(); // Açıklamayı al
                         string compDate = compDateCell.Value.ToString(); // Tamamlanma zamanını al
-                        
+
                         // Eğer açıklama yoksa
                         if (description == "")
                         {
@@ -160,7 +160,7 @@ namespace TalepTakip
                             // Tamamlandı olan satırı sarıdan beyaza çevir
                             int rowIndex = guna2DataGridView1.Rows[e.RowIndex].Index;
                             guna2DataGridView1.Rows[rowIndex].DefaultCellStyle.BackColor = Color.White;
-                            
+
                             // Yeniden yükle
                             this.Refresh();
                         }
@@ -270,62 +270,59 @@ namespace TalepTakip
             // Listeyi yeniden yükle
             Home homeForm = new Home(uName);
             homeForm.Show();
-            this.Hide();    
+            this.Hide();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            // Eğer requests listesi doluysa dışa aktar işlemine başla
-            //if (requests != null && requests.Count > 0)
-            //{
-                // Excel dosyasına yazma
-                using (ExcelPackage pck = new ExcelPackage())
+            ExportRequestsToExcel(requests);
+        }
+
+        // Talepleri dışarı aktarma metodu
+        private void ExportRequestsToExcel(List<TalepTakip.Models.Request> requestsList)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Requests");
+                    ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-                    // Başlık satırlarını oluştur
-                    ws.Cells[1, 1].Value = "Talep ID";
-                    ws.Cells[1, 2].Value = "Talep Başlığı";
-                    ws.Cells[1, 3].Value = "Talep Açıklaması";
-                    ws.Cells[1, 4].Value = "Kullanıcı Adı";
-                    ws.Cells[1, 5].Value = "Durum";
-                    ws.Cells[1, 6].Value = "Talep Tarihi";
-                    ws.Cells[1, 7].Value = "Dosya Adı";
-                    ws.Cells[1, 8].Value = "Açıklama";
-
-
-                    // Listeyi satır satır Excel'e yaz
-                    for (int i = 0; i < requests.Count; i++)
+                    // Excel dosyasına yazma
+                    using (var pck = new ExcelPackage())
                     {
-                        ws.Cells[i + 2, 1].Value = requests[i].ReqId;
-                        ws.Cells[i + 2, 2].Value = requests[i].ReqTitle;
-                        ws.Cells[i + 2, 3].Value = requests[i].ReqDescription;
-                        ws.Cells[i + 2, 4].Value = requests[i].UserName;
-                        ws.Cells[i + 2, 5].Value = requests[i].State;
-                        ws.Cells[i + 2, 6].Value = requests[i].ReqDate;
-                        ws.Cells[i + 2, 6].Value = requests[i].FileName;
-                        ws.Cells[i + 2, 7].Value = requests[i].Description;
-                    }
+                        var ws = pck.Workbook.Worksheets.Add("Requests");
 
-                    // Dosyayı kaydetme
-                    using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-                    {
-                        saveFileDialog.Filter = "Excel Files|*.xlsx";
-                        saveFileDialog.Title = "Excel Dosyası Kaydet";
+                        // Başlık satırlarını oluştur
+                        ws.Cells[1, 1].Value = "Talep ID";
+                        ws.Cells[1, 2].Value = "Talep Başlığı";
+                        ws.Cells[1, 3].Value = "Talep Açıklaması";
+                        ws.Cells[1, 4].Value = "Kullanıcı Adı";
+                        ws.Cells[1, 5].Value = "Durum";
+                        ws.Cells[1, 6].Value = "Talep Tarihi";
+                        ws.Cells[1, 7].Value = "Dosya Adı";
+                        ws.Cells[1, 8].Value = "Açıklama";
+                        ws.Cells[1, 9].Value = "Tamamlanma Tarihi";
 
-                        if (saveFileDialog.ShowDialog() == DialogResult.OK)
+
+                        // Listeyi satır satır Excel'e yaz
+                        for (int i = 0; i < requestsList.Count; i++)
                         {
-                            FileInfo fi = new FileInfo(saveFileDialog.FileName);
-                            pck.SaveAs(fi);
-                            MessageBox.Show("Veriler Excel'e başarıyla aktarıldı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ws.Cells[i + 2, 1].Value = requestsList[i].ReqId;
+                            ws.Cells[i + 2, 2].Value = requestsList[i].ReqTitle;
+                            ws.Cells[i + 2, 3].Value = requestsList[i].ReqDescription;
+                            ws.Cells[i + 2, 4].Value = requestsList[i].UserName;
+                            ws.Cells[i + 2, 5].Value = requestsList[i].State;
+                            ws.Cells[i + 2, 6].Value = requestsList[i].ReqDate;
+                            ws.Cells[i + 2, 7].Value = requestsList[i].FileName;
+                            ws.Cells[i + 2, 8].Value = requestsList[i].Description;
+                            ws.Cells[i + 2, 9].Value = requestsList[i].CompDate;
                         }
+
+                        // Dosyayı kaydetme
+                        pck.SaveAs(new FileInfo(saveFileDialog.FileName));
                     }
                 }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Dışa aktarılacak veri yok.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
+            }
         }
     }
 }
