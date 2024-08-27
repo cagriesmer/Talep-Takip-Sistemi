@@ -127,28 +127,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
+    <Compile Include="Forms\About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About.Designer.cs">
+    <Compile Include="Forms\About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="KullaniciEkle.cs">
+    <Compile Include="Forms\KullaniciEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KullaniciEkle.Designer.cs">
+    <Compile Include="Forms\KullaniciEkle.Designer.cs">
       <DependentUpon>KullaniciEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\NotificationService.cs" />
@@ -159,34 +159,34 @@
     <Compile Include="Models\UserService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings.cs">
+    <Compile Include="Forms\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Settings.Designer.cs">
+    <Compile Include="Forms\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Talep.cs">
+    <Compile Include="Forms\Talep.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Talep.Designer.cs">
+    <Compile Include="Forms\Talep.Designer.cs">
       <DependentUpon>Talep.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users.cs">
+    <Compile Include="Forms\Users.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users.Designer.cs">
+    <Compile Include="Forms\Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="About.resx">
+    <EmbeddedResource Include="Forms\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KullaniciEkle.resx">
+    <EmbeddedResource Include="Forms\KullaniciEkle.resx">
       <DependentUpon>KullaniciEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -199,13 +199,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Settings.resx">
+    <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Talep.resx">
+    <EmbeddedResource Include="Forms\Talep.resx">
       <DependentUpon>Talep.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users.resx">
+    <EmbeddedResource Include="Forms\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
