@@ -109,9 +109,9 @@ namespace TalepTakip.Models
         }
 
         // Talep durumunu güncelleme
-        public void ApproveRequest(string requestId, string description)
+        public void ApproveRequest(string requestId, string description, string compDate)
         {
-            userRepository.UpdateRequestState(requestId, "Tamamlandı", description);
+            userRepository.UpdateRequestState(requestId, "Tamamlandı", description, compDate);
         }
 
         // Talep esnasında yükenen dosyayı veritabanına kaydetme

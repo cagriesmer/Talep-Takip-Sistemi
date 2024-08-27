@@ -205,7 +205,8 @@ namespace TalepTakip.Models
                                 ReqDate = Convert.ToDateTime(reader["reqDate"]),
                                 State = reader["state"].ToString(),
                                 FileName = reader["fileName"].ToString(),
-                                Description = reader["description"].ToString()
+                                Description = reader["description"].ToString(),
+                                CompDate = reader["compDate"].ToString()
 
                             });
                         }
@@ -239,7 +240,8 @@ namespace TalepTakip.Models
                                 ReqDate = Convert.ToDateTime(reader["reqDate"]),
                                 State = reader["state"].ToString(),
                                 FileName = reader["fileName"].ToString(),
-                                Description = reader["description"].ToString()
+                                Description = reader["description"].ToString(),
+                                CompDate = reader["compDate"].ToString()
                             });
                         }
                     }
@@ -330,17 +332,18 @@ namespace TalepTakip.Models
         }
 
         // Talep durumunu güncelle
-        public void UpdateRequestState(string requestId, string state, string description)
+        public void UpdateRequestState(string requestId, string state, string description, string compDate)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "UPDATE Requests SET state = @state, description = @description WHERE requestID = @requestID";
+                string query = "UPDATE Requests SET state = @state, description = @description, compDate = @compDate WHERE requestID = @requestID";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@state", state);
                     cmd.Parameters.AddWithValue("@requestID", requestId);
                     cmd.Parameters.AddWithValue("@description", description);
+                    cmd.Parameters.AddWithValue("@compDate", compDate);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Talep " + state.ToString() + " olarak kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

@@ -1,20 +1,11 @@
-﻿using Guna.UI2.WinForms;
-using MySql.Data.MySqlClient;
-using OfficeOpenXml;
-using Org.BouncyCastle.Asn1.Ocsp;
+﻿using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TalepTakip.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-using System.IO;
 
 namespace TalepTakip
 {
@@ -23,6 +14,7 @@ namespace TalepTakip
         private string uName;
         private UserService userService;
         private NotificationService notificationService;
+        private List<TalepTakip.Models.Request> requests;
 
         public Home(string uName)
         {
@@ -100,6 +92,7 @@ namespace TalepTakip
                 guna2DataGridView1.Rows[rowIndex].Cells["Column7"].Value = request.ReqId; // Talep Id al, gizli sütuna ekle
                 guna2DataGridView1.Rows[rowIndex].Cells["Column8"].Value = request.FileName; // Mevcut "Dosya Adı" sütununa ekle
                 guna2DataGridView1.Rows[rowIndex].Cells["Column9"].Value = request.Description; // Mevcut "Açıklama" sütununa ekle
+                guna2DataGridView1.Rows[rowIndex].Cells["Column10"].Value = request.CompDate; // Mevcut "Tamamlanma Tarihi" sütununa ekle
 
                 // Talep durumuna göre satır rengini ayarla
                 if (request.State == "Beklemede")
@@ -126,6 +119,8 @@ namespace TalepTakip
                     var requestIdcell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column7"];
                     // Seçilen satıra yazılan açıklamayı al
                     var descriptionCell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column9"];
+                    // Seçilen satırın tamamlanma tarihini al
+                    var compDateCell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column10"];
 
                     // Eğer durum ve talep Id'si alınabiliyorsa
                     if (cell != null && cell.Value != null && requestIdcell != null && requestIdcell.Value != null)
@@ -133,11 +128,12 @@ namespace TalepTakip
                         string requestId = requestIdcell.Value.ToString(); // Talep Id'sini al
                         string state = cell.Value.ToString(); // Durumu al
                         string description = descriptionCell.Value.ToString(); // Açıklamayı al
+                        string compDate = compDateCell.Value.ToString(); // Tamamlanma zamanını al
+                        
                         // Eğer açıklama yoksa
                         if (description == "")
                         {
                             description = "Açıklama yok";
-
                         }
 
                         // Eğer durum "Tamamlandı" ve Açıklama yok ise
@@ -149,14 +145,22 @@ namespace TalepTakip
                         }
                         else
                         {
+                            // Eğer tamamamlanma tarihi yoksa, o anın tarihini ekle
+                            if (string.IsNullOrEmpty(compDate))
+                            {
+                                compDate = DateTime.Now.ToString();
+                                compDateCell.Value = compDate;
+                            }
+
                             // Talebi onayla
-                            userService.ApproveRequest(requestId, description);
+                            userService.ApproveRequest(requestId, description, compDate);
                             // Durumu "Tamamlandı" olarak güncelle
                             cell.Value = "Tamamlandı";
                             descriptionCell.Value = description;
                             // Tamamlandı olan satırı sarıdan beyaza çevir
                             int rowIndex = guna2DataGridView1.Rows[e.RowIndex].Index;
                             guna2DataGridView1.Rows[rowIndex].DefaultCellStyle.BackColor = Color.White;
+                            
                             // Yeniden yükle
                             this.Refresh();
                         }
@@ -271,12 +275,9 @@ namespace TalepTakip
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            // Home_load ile gelen requests listesini al
-            List<TalepTakip.Models.Request> requests = userService.GetAllRequests();
-
             // Eğer requests listesi doluysa dışa aktar işlemine başla
-            if (requests != null && requests.Count > 0)
-            {
+            //if (requests != null && requests.Count > 0)
+            //{
                 // Excel dosyasına yazma
                 using (ExcelPackage pck = new ExcelPackage())
                 {
@@ -304,8 +305,6 @@ namespace TalepTakip
                         ws.Cells[i + 2, 6].Value = requests[i].ReqDate;
                         ws.Cells[i + 2, 6].Value = requests[i].FileName;
                         ws.Cells[i + 2, 7].Value = requests[i].Description;
-
-                        // Diğer alanları da ekleyin
                     }
 
                     // Dosyayı kaydetme
@@ -322,11 +321,11 @@ namespace TalepTakip
                         }
                     }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Dışa aktarılacak veri yok.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Dışa aktarılacak veri yok.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
         }
     }
 }
