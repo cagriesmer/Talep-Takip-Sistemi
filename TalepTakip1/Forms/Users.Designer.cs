@@ -48,9 +48,9 @@
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kullanıcıyıSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
@@ -289,25 +289,13 @@
             this.kullanıcıyıSilToolStripMenuItem.Text = "Kullanıcıyı Sil";
             this.kullanıcıyıSilToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıyıSilToolStripMenuItem_Click);
             // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(1265, 532);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(73, 18);
-            this.guna2HtmlLabel8.TabIndex = 27;
-            this.guna2HtmlLabel8.Text = "Hakkında...";
-            this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::TalepTakip.Properties.Resources.T_C__Adalet_Bakanlığı_Yeni_Logo_2018;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(9, 1);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(100, 80);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -335,20 +323,33 @@
             this.guna2Button2.Text = "Yenile";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(1260, 535);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(79, 17);
+            this.linkLabel1.TabIndex = 38;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Hakkında...";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Users
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1349, 561);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2DataGridView2);
             this.Controls.Add(this.guna2DataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Users";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -377,8 +378,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

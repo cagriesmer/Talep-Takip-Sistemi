@@ -56,6 +56,7 @@ namespace TalepTakip.Models
         // Bildirim gösterme fonksiyonu
         private void ShowNotification(string title, string text)
         {
+            
             NotifyIcon notifyIcon = new NotifyIcon
             {
                 Visible = true,

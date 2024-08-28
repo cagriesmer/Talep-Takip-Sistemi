@@ -17,16 +17,6 @@ namespace TalepTakip
             InitializeComponent();
         }
 
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/cagriesmer/TalepTakip/blob/master/README.md");
@@ -40,11 +30,6 @@ namespace TalepTakip
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("mailto:cagriesmer7@gmail.com");
-        }
-
-        private void About_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

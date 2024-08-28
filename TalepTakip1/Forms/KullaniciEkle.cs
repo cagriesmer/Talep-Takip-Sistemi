@@ -35,26 +35,6 @@ namespace TalepTakip
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void KayitOl_Load(object sender, EventArgs e)
         {
             List<Role> roles = userService.GetAllRoles();
@@ -62,11 +42,6 @@ namespace TalepTakip
             guna2ComboBox1.DataSource = roles;
             guna2ComboBox1.DisplayMember = "roleName";
             guna2ComboBox1.ValueMember = "roleID";
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
         private void KayitOl_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -149,20 +124,6 @@ namespace TalepTakip
                 MessageBox.Show("Kullanıcı kaydedilemedi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
@@ -172,7 +133,7 @@ namespace TalepTakip
             this.Hide();
         }
 
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             About aboutForm = new About();
             aboutForm.Show();

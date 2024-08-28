@@ -67,13 +67,7 @@ namespace TalepTakip
             if (isSuccess)
             {
                 MessageBox.Show("Talep başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //guna2TextBox1.Text = "";
-                //guna2TextBox2.Text = "";
-                //filePath = null;
-                //fileData = null;
-                //fileType = null;
-                //guna2HtmlLabel5.Visible = false;
-
+             
                 Home home_form = new Home(uName);
                 home_form.Show();
                 this.Hide();
@@ -96,16 +90,6 @@ namespace TalepTakip
         private void Talep__FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Talep_Load(object sender, EventArgs e)
-        {
-
         }
 
         // Dosya yükleme işlemi
@@ -138,7 +122,12 @@ namespace TalepTakip
             }
         }
 
-        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        private void Talep_Load(object sender, EventArgs e)
+        {
+            guna2TextBox2.Select();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             About about = new About();
             about.Show();

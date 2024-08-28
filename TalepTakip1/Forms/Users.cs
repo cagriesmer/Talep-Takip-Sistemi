@@ -109,18 +109,18 @@ namespace TalepTakip
             settingsForm.Show();
         }
 
-        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
-        {
-            About about = new About();
-            about.Show();
-        }
-
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             // Sayfayı yenile
             Users usersForm = new Users(uName);
             usersForm.Show();
             this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            About about = new About();
+            about.Show();
         }
     }
 }

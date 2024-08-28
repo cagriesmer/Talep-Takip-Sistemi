@@ -60,6 +60,7 @@
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
@@ -387,13 +388,11 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1255, 534);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(0, 0);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(73, 18);
-            this.guna2HtmlLabel2.TabIndex = 15;
-            this.guna2HtmlLabel2.Text = "Hakkında...";
-            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(0, 0);
+            this.guna2HtmlLabel2.TabIndex = 35;
+            this.guna2HtmlLabel2.Text = null;
             // 
             // guna2PictureBox1
             // 
@@ -482,10 +481,24 @@
             this.guna2TextBox1.TabIndex = 33;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(1258, 535);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(79, 17);
+            this.linkLabel1.TabIndex = 34;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Hakkında...";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1349, 561);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);
@@ -542,5 +555,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

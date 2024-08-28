@@ -21,6 +21,7 @@ namespace TalepTakip
         {
             InitializeComponent();
             this.uName = uName;
+            this.notificationService = new NotificationService(new UserService(new UserRepository()));
             userService = new UserService(new UserRepository());
             guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
         }
@@ -32,9 +33,11 @@ namespace TalepTakip
             Login loginForm = new Login();
             loginForm.Show();
             this.Hide();
+
             // Bildirim servisini durdur
             if (notificationService != null)
             {
+                // Bildirim servisini durdur
                 notificationService.Stop();
             }
         }
@@ -66,10 +69,6 @@ namespace TalepTakip
                 guna2Button3.Visible = true;
                 // Yönetici ve müdür rolü için onayla butonunu göster
                 guna2DataGridView1.Columns["Column6"].Visible = true;
-
-                // Bildirim servisini başlat
-                notificationService = new NotificationService(userService);
-                notificationService.Start();
             }
             else
             {
@@ -109,6 +108,7 @@ namespace TalepTakip
             // listedeki seçimi kaldır
             guna2DataGridView1.ClearSelection();
         }
+
         // DataGridView'de onayla butonuna tıklandığında
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -220,11 +220,6 @@ namespace TalepTakip
         {
             // Uygulamayı kapat
             Application.Exit();
-            // Bildirim servisini durdur
-            if (notificationService != null)
-            {
-                notificationService.Stop();
-            }
         }
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
@@ -262,12 +257,6 @@ namespace TalepTakip
             {
                 MessageBox.Show("Bu işlemi yapmaya yetkiniz yok.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-            About aboutForm = new About();
-            aboutForm.Show();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -391,6 +380,12 @@ namespace TalepTakip
 
                 guna2DataGridView1.Sort(guna2DataGridView1.Columns["Column4"], System.ComponentModel.ListSortDirection.Descending);
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            About aboutForm = new About();
+            aboutForm.Show();
         }
     }
 }

@@ -12,6 +12,7 @@ namespace TalepTakip
     public partial class Login : Form
     {
         private UserService userService;
+        private NotificationService notificationService;
         public string uName { get; private set; }
 
         public Login()
@@ -35,21 +36,23 @@ namespace TalepTakip
             }
         }
 
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string username = guna2TextBox1.Text;
-            string password = guna2TextBox2.Text;
+            string username = usernameTextBox.Text;
+            string password = passwordTextBox.Text;
 
             bool isAuthenticated = userService.Login(username, password);
             if (isAuthenticated)
             {
                 // Kullanıcı adını sakla
                 uName = username;
+                User user = userService.GetUserByUsername(username);
+                if (user.userRole == "Yönetici")
+                {
+                    // Bildirim servisini başlat
+                    notificationService = new NotificationService(userService);
+                    notificationService.Start();
+                }
 
                 // Ana sayfaya yönlendirme kodu
                 Home homeForm = new Home(uName);
@@ -61,41 +64,12 @@ namespace TalepTakip
                 MessageBox.Show("Geçersiz kullanıcı adı veya şifre.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             About aboutForm = new About();
             aboutForm.Show();

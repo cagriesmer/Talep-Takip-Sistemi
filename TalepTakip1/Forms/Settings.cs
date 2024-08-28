@@ -118,7 +118,7 @@ namespace TalepTakip
             }
         }
 
-        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             About about = new About();
             about.Show();

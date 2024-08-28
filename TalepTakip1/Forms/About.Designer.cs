@@ -63,7 +63,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(168, 27);
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "Geliştirici Hakkında";
-            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // guna2Panel1
             // 
@@ -158,7 +157,6 @@
             this.Name = "About";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hakkında";
-            this.Load += new System.EventHandler(this.About_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
