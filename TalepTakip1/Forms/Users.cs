@@ -57,6 +57,9 @@ namespace TalepTakip
             // DataSource'u ayarladıktan veya verileri yükledikten sonra, isme göre sırala
             guna2DataGridView1.Sort(guna2DataGridView1.Columns["Column1"], System.ComponentModel.ListSortDirection.Ascending);
 
+            // Listede seçimi kaldır
+            guna2DataGridView1.ClearSelection();
+
         }
 
         private void User_FormClosing(object sender, FormClosingEventArgs e)

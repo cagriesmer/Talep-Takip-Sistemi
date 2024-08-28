@@ -106,7 +106,8 @@ namespace TalepTakip
             // DataSource'u ayarladıktan veya verileri yükledikten sonra: Tarihe göre sırala
             guna2DataGridView1.Sort(guna2DataGridView1.Columns["Column4"], System.ComponentModel.ListSortDirection.Descending);
 
-            //guna2DataGridView1.DataSource = requests;
+            // listedeki seçimi kaldır
+            guna2DataGridView1.ClearSelection();
         }
         // DataGridView'de onayla butonuna tıklandığında
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
