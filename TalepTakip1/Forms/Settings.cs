@@ -114,7 +114,9 @@ namespace TalepTakip
                     MessageBox.Show("Kullanıcı bilgileri güncellenemedi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
 
-                
+                Users userForm = new Users(currentUser);
+                userForm.Show();
+                this.Hide();
             }
         }
 
