@@ -42,9 +42,10 @@
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(96, 0);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(96, 31);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(205, 33);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -52,9 +53,10 @@
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(87, 221);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(87, 252);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(214, 33);
             this.guna2HtmlLabel2.TabIndex = 1;
@@ -63,6 +65,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2Panel1.Controls.Add(this.linkLabel3);
             this.guna2Panel1.Controls.Add(this.linkLabel2);
             this.guna2Panel1.Controls.Add(this.linkLabel1);
@@ -70,16 +73,17 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 12);
+            this.guna2Panel1.Location = new System.Drawing.Point(34, 12);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(387, 490);
+            this.guna2Panel1.Size = new System.Drawing.Size(385, 531);
             this.guna2Panel1.TabIndex = 2;
             // 
             // linkLabel3
             // 
+            this.linkLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel3.Location = new System.Drawing.Point(25, 459);
+            this.linkLabel3.Location = new System.Drawing.Point(25, 490);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(174, 20);
             this.linkLabel3.TabIndex = 7;
@@ -89,9 +93,10 @@
             // 
             // linkLabel2
             // 
+            this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel2.Location = new System.Drawing.Point(25, 429);
+            this.linkLabel2.Location = new System.Drawing.Point(25, 460);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(196, 20);
             this.linkLabel2.TabIndex = 6;
@@ -101,9 +106,10 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel1.Location = new System.Drawing.Point(25, 187);
+            this.linkLabel1.Location = new System.Drawing.Point(25, 218);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(238, 20);
             this.linkLabel1.TabIndex = 5;
@@ -113,9 +119,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(25, 257);
+            this.label2.Location = new System.Drawing.Point(25, 288);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(342, 160);
             this.label2.TabIndex = 4;
@@ -123,9 +130,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(25, 36);
+            this.label1.Location = new System.Drawing.Point(21, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(346, 140);
             this.label1.TabIndex = 3;
@@ -135,7 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(407, 514);
+            this.ClientSize = new System.Drawing.Size(466, 555);
             this.Controls.Add(this.guna2Panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

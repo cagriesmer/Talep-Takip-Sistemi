@@ -108,7 +108,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 84);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(10, 89);
             this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2DataGridView1.MultiSelect = false;
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -125,7 +125,7 @@
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.RowTemplate.ReadOnly = true;
             this.guna2DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1323, 429);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1325, 438);
             this.guna2DataGridView1.TabIndex = 0;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -248,12 +248,12 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(138, 28);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(120, 26);
             // 
             // düzenleToolStripMenuItem
             // 
             this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.düzenleToolStripMenuItem.Text = "Talebi Sil";
             this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
             // 
@@ -319,7 +319,7 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(1209, 13);
+            this.guna2Button1.Location = new System.Drawing.Point(1211, 13);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(126, 53);
@@ -334,7 +334,7 @@
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(118, 34);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(113, 18);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
             // 
@@ -351,7 +351,7 @@
             this.guna2Button2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button2.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button2.Location = new System.Drawing.Point(945, 13);
+            this.guna2Button2.Location = new System.Drawing.Point(947, 14);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.BorderRadius = 10;
@@ -374,7 +374,7 @@
             this.guna2Button3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button3.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button3.Location = new System.Drawing.Point(681, 13);
+            this.guna2Button3.Location = new System.Drawing.Point(683, 13);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.BorderRadius = 10;
@@ -388,9 +388,9 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1249, 520);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1255, 534);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(86, 21);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(73, 18);
             this.guna2HtmlLabel2.TabIndex = 15;
             this.guna2HtmlLabel2.Text = "Hakkında...";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
@@ -400,9 +400,9 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::TalepTakip.Properties.Resources.T_C__Adalet_Bakanlığı_Yeni_Logo_2018;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(10, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 65);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 80);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 30;
             this.guna2PictureBox1.TabStop = false;
@@ -421,7 +421,7 @@
             this.guna2Button4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button4.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button4.Location = new System.Drawing.Point(1077, 13);
+            this.guna2Button4.Location = new System.Drawing.Point(1079, 13);
             this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.BorderRadius = 10;
@@ -444,7 +444,7 @@
             this.guna2Button5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button5.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button5.Location = new System.Drawing.Point(813, 13);
+            this.guna2Button5.Location = new System.Drawing.Point(815, 14);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.BorderRadius = 10;
@@ -472,21 +472,20 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(332, 23);
+            this.guna2TextBox1.Location = new System.Drawing.Point(302, 23);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Arama...";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(268, 32);
+            this.guna2TextBox1.Size = new System.Drawing.Size(332, 37);
             this.guna2TextBox1.TabIndex = 33;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1347, 553);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1349, 561);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);

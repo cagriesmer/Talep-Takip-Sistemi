@@ -69,8 +69,8 @@
             this.guna2Button3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button3.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(945, 12);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button3.Location = new System.Drawing.Point(952, 12);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.BorderRadius = 10;
             this.guna2Button3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -83,10 +83,10 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(118, 35);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(113, 32);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(113, 18);
             this.guna2HtmlLabel1.TabIndex = 19;
             this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
             // 
@@ -102,8 +102,8 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button1.Location = new System.Drawing.Point(1209, 13);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(1212, 12);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(126, 53);
             this.guna2Button1.TabIndex = 18;
@@ -133,13 +133,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView2.Location = new System.Drawing.Point(439, 204);
-            this.guna2DataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2DataGridView2.Location = new System.Drawing.Point(329, 166);
+            this.guna2DataGridView2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2DataGridView2.Name = "guna2DataGridView2";
             this.guna2DataGridView2.RowHeadersVisible = false;
             this.guna2DataGridView2.RowHeadersWidth = 51;
             this.guna2DataGridView2.RowTemplate.Height = 24;
-            this.guna2DataGridView2.Size = new System.Drawing.Size(9, 10);
+            this.guna2DataGridView2.Size = new System.Drawing.Size(7, 8);
             this.guna2DataGridView2.TabIndex = 17;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -194,8 +194,8 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 84);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(9, 86);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
@@ -209,7 +209,7 @@
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.RowTemplate.ReadOnly = true;
             this.guna2DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1323, 428);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1330, 441);
             this.guna2DataGridView1.TabIndex = 16;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -273,19 +273,19 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(166, 52);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(144, 48);
             // 
             // düzenleToolStripMenuItem
             // 
             this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.düzenleToolStripMenuItem.Text = "Düzenle";
             this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
             // 
             // kullanıcıyıSilToolStripMenuItem
             // 
             this.kullanıcıyıSilToolStripMenuItem.Name = "kullanıcıyıSilToolStripMenuItem";
-            this.kullanıcıyıSilToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.kullanıcıyıSilToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.kullanıcıyıSilToolStripMenuItem.Text = "Kullanıcıyı Sil";
             this.kullanıcıyıSilToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıyıSilToolStripMenuItem_Click);
             // 
@@ -293,9 +293,10 @@
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(1249, 519);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(1265, 532);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(86, 21);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(73, 18);
             this.guna2HtmlLabel8.TabIndex = 27;
             this.guna2HtmlLabel8.Text = "Hakkında...";
             this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
@@ -305,9 +306,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::TalepTakip.Properties.Resources.T_C__Adalet_Bakanlığı_Yeni_Logo_2018;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(9, 1);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 65);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 80);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 31;
             this.guna2PictureBox1.TabStop = false;
@@ -325,8 +327,8 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Arial", 10.28571F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button2.Location = new System.Drawing.Point(1077, 13);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button2.Location = new System.Drawing.Point(1082, 12);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(126, 53);
             this.guna2Button2.TabIndex = 32;
@@ -335,9 +337,8 @@
             // 
             // Users
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1347, 553);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1349, 561);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel8);
@@ -347,6 +348,7 @@
             this.Controls.Add(this.guna2DataGridView2);
             this.Controls.Add(this.guna2DataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Users";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
