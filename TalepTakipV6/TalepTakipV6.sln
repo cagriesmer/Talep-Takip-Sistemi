@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TalepTakipV6", "TalepTakipV6\TalepTakipV6.vdproj", "{441E88C0-7F6A-421A-BE5F-337755E28164}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TalepTakipV6", "TalepTakipV6\TalepTakipV6.vdproj", "{0748C928-3B72-4241-BD4B-1DF136A1DA6A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalepTakip", "..\TalepTakip1\TalepTakip.csproj", "{55F17232-236E-4522-A55B-89FBCBB0E879}"
 EndProject
@@ -13,10 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{441E88C0-7F6A-421A-BE5F-337755E28164}.Debug|Any CPU.ActiveCfg = Debug
-		{441E88C0-7F6A-421A-BE5F-337755E28164}.Debug|Any CPU.Build.0 = Debug
-		{441E88C0-7F6A-421A-BE5F-337755E28164}.Release|Any CPU.ActiveCfg = Release
-		{441E88C0-7F6A-421A-BE5F-337755E28164}.Release|Any CPU.Build.0 = Release
+		{0748C928-3B72-4241-BD4B-1DF136A1DA6A}.Debug|Any CPU.ActiveCfg = Debug
+		{0748C928-3B72-4241-BD4B-1DF136A1DA6A}.Debug|Any CPU.Build.0 = Debug
+		{0748C928-3B72-4241-BD4B-1DF136A1DA6A}.Release|Any CPU.ActiveCfg = Release
+		{0748C928-3B72-4241-BD4B-1DF136A1DA6A}.Release|Any CPU.Build.0 = Release
 		{55F17232-236E-4522-A55B-89FBCBB0E879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55F17232-236E-4522-A55B-89FBCBB0E879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55F17232-236E-4522-A55B-89FBCBB0E879}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AFFC7B2C-5533-4D79-941F-C5A16766A15D}
+		SolutionGuid = {FC1855C4-C3A1-43C1-96BA-8C940F8CF4F5}
 	EndGlobalSection
 EndGlobal
