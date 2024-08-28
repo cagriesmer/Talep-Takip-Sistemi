@@ -238,7 +238,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Arial", 10.2F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button2.Location = new System.Drawing.Point(244, 388);
+            this.guna2Button2.Location = new System.Drawing.Point(221, 388);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(126, 53);
