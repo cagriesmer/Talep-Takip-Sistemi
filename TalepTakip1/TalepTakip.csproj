@@ -7,7 +7,7 @@
     <ProjectGuid>{55F17232-236E-4522-A55B-89FBCBB0E879}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TalepTakip</RootNamespace>
-    <AssemblyName>TalepTakip1</AssemblyName>
+    <AssemblyName>Talep Takip Sistemi</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>T.C. Adalet Bakanlığı Logo 2018.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
@@ -228,6 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\T.C. Adalet Bakanlığı Yeni Logo 2018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="T.C. Adalet Bakanlığı Logo 2018.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
