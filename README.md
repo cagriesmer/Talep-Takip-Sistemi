@@ -39,7 +39,7 @@ Projede .NET Framework 4.5 kullanılmıştır. Ayrıca 4.7.2 veya 4.8 sürümler
 <img src = "Images/2.png"/>
 
 - Talep girişi
-<img src = "Images/3talepekleme.png"/>
+<img src = "Images/3talepEkleme.png"/>
 
 - Yönetici ana sayfa
 <img src = "Images/4.png"/>
