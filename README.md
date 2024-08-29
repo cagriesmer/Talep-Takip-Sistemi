@@ -12,6 +12,7 @@ Bu proje, C# Windows Forms kullanılarak geliştirilmiş bir Telep Takip Sistemi
 - Tamamlama işlemi esnasında açıklama girebilir.
 - Kullanıcı listesini görüntüleyebilir. Yeni kullanıcı ekleyebilir, mevcut bir kullanıcıyı düzenleyebilir ya da silebilir.
 - Personel için tanımlanan işlemlerin hepsini yönetici de yapabilir.
+- Yeni bir talep geldiğinde yöneticiye bildirim iletilir.
 
 ## 🔧 Kurulum
 1. Projeyi GitHub'dan veya ZIP olarak indirin.
