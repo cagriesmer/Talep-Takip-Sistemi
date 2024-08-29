@@ -34,6 +34,7 @@ namespace TalepTakip.Models
         public void Stop()
         {
             notificationTimer.Stop();
+            notificationTimer.Dispose();
         }
 
         // Timer Tick olayı
@@ -55,8 +56,7 @@ namespace TalepTakip.Models
 
         // Bildirim gösterme fonksiyonu
         private void ShowNotification(string title, string text)
-        {
-            
+        {            
             NotifyIcon notifyIcon = new NotifyIcon
             {
                 Visible = true,
