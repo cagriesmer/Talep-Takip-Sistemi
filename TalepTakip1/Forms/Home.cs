@@ -84,16 +84,16 @@ namespace TalepTakip
             foreach (var request in requests)
             {
                 int rowIndex = guna2DataGridView1.Rows.Add();
-                guna2DataGridView1.Rows[rowIndex].Cells["Column1"].Value = request.UserName; // Mevcut "kullanıcı adı" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column2"].Value = request.ReqTitle; // Mevcut "talep başlığı" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column3"].Value = request.ReqDescription; // Mevcut "talep açıklaması" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column4"].Value = request.ReqDate; // Mevcut "tarih" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column5"].Value = request.State; // Mevcut "Durum" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column6"].Value = "Tamamla"; // Mevcut "Durum" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column7"].Value = request.ReqId; // Talep Id al, gizli sütuna ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column8"].Value = request.FileName; // Mevcut "Dosya Adı" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column9"].Value = request.Description; // Mevcut "Açıklama" sütununa ekle
-                guna2DataGridView1.Rows[rowIndex].Cells["Column10"].Value = request.CompDate; // Mevcut "Tamamlanma Tarihi" sütununa ekle
+                guna2DataGridView1.Rows[rowIndex].Cells["Column1"].Value = request.UserName;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column2"].Value = request.ReqTitle;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column3"].Value = request.ReqDescription;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column4"].Value = request.ReqDate;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column5"].Value = request.State;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column6"].Value = "Tamamla";
+                guna2DataGridView1.Rows[rowIndex].Cells["Column7"].Value = request.ReqId;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column8"].Value = request.FileName;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column9"].Value = request.Description;
+                guna2DataGridView1.Rows[rowIndex].Cells["Column10"].Value = request.CompDate;
 
                 // Talep durumuna göre satır rengini ayarla
                 if (request.State == "Beklemede")
