@@ -44,7 +44,7 @@ namespace TalepTakip
         // Ana sayfa yüklendiğinde
         public void Home_Load(object sender, EventArgs e)
         {
-            // Hoş geldiniz mesajını ayarla
+            // Hoş geldiniz mesajı
             guna2HtmlLabel1.Text = $"Hoşgeldiniz {uName}";
 
             // Kullanıcının rolünü al

@@ -68,7 +68,7 @@
             this.usernameLabel.Location = new System.Drawing.Point(22, 208);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(79, 18);
+            this.usernameLabel.Size = new System.Drawing.Size(96, 21);
             this.usernameLabel.TabIndex = 4;
             this.usernameLabel.Text = "Kullanıcı Adı";
             // 
@@ -79,7 +79,7 @@
             this.passwordLabel.Location = new System.Drawing.Point(22, 305);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(32, 18);
+            this.passwordLabel.Size = new System.Drawing.Size(38, 21);
             this.passwordLabel.TabIndex = 3;
             this.passwordLabel.Text = "Şifre";
             // 
@@ -128,7 +128,7 @@
             this.baslikLabel.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.baslikLabel.Location = new System.Drawing.Point(74, 156);
             this.baslikLabel.Name = "baslikLabel";
-            this.baslikLabel.Size = new System.Drawing.Size(231, 33);
+            this.baslikLabel.Size = new System.Drawing.Size(286, 40);
             this.baslikLabel.TabIndex = 6;
             this.baslikLabel.Text = "Talep Takip Sistemi";
             // 
@@ -150,9 +150,9 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(152, 484);
+            this.linkLabel1.Location = new System.Drawing.Point(139, 475);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(79, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(103, 22);
             this.linkLabel1.TabIndex = 36;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Hakkında...";
