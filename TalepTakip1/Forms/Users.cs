@@ -122,5 +122,10 @@ namespace TalepTakip
             About about = new About();
             about.Show();
         }
+
+        private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

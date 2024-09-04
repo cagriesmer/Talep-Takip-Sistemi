@@ -107,8 +107,11 @@ namespace TalepTakip
                 if (isRoleUpdated)
                 {
                     MessageBox.Show("Kullanıcı başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
                     guna2TextBox1.Text = "";
                     guna2TextBox2.Text = "";
+                    
+                    
                     guna2TextBox3.Text = "";
                     guna2TextBox4.Text = "";
                     guna2TextBox5.Text = "";

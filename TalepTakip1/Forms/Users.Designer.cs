@@ -86,7 +86,7 @@
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(113, 32);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(113, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 21);
             this.guna2HtmlLabel1.TabIndex = 19;
             this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
             // 
@@ -273,19 +273,20 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(144, 48);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(211, 80);
+            this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // düzenleToolStripMenuItem
             // 
             this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.düzenleToolStripMenuItem.Text = "Düzenle";
             this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
             // 
             // kullanıcıyıSilToolStripMenuItem
             // 
             this.kullanıcıyıSilToolStripMenuItem.Name = "kullanıcıyıSilToolStripMenuItem";
-            this.kullanıcıyıSilToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.kullanıcıyıSilToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.kullanıcıyıSilToolStripMenuItem.Text = "Kullanıcıyı Sil";
             this.kullanıcıyıSilToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıyıSilToolStripMenuItem_Click);
             // 
@@ -330,7 +331,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(1260, 535);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(79, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(103, 22);
             this.linkLabel1.TabIndex = 38;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Hakkında...";
