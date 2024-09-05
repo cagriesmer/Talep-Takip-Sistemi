@@ -118,14 +118,10 @@ namespace TalepTakip
                 // Tıklanan hücrenin "Column6" olup olmadığını kontrol edin (Onayla butonu)
                 if (guna2DataGridView1.Columns[e.ColumnIndex].Name == "Column6")
                 {
-                    // Seçilen satırın talep durumunu al
-                    var cell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column5"];
-                    // Seçilen satırın talep Id'sini al
-                    var requestIdcell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column7"];
-                    // Seçilen satıra yazılan açıklamayı al
-                    var descriptionCell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column9"];
-                    // Seçilen satırın tamamlanma tarihini al
-                    var compDateCell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column10"];
+                    var cell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column5"]; // Seçilen satırın talep durumunu al
+                    var requestIdcell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column7"]; // Seçilen satırın talep Id'sini al
+                    var descriptionCell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column9"]; // Seçilen satıra yazılan açıklamayı al
+                    var compDateCell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column10"]; // Seçilen satırın tamamlanma tarihini al
 
                     // Eğer durum ve talep Id'si alınabiliyorsa
                     if (cell != null && cell.Value != null && requestIdcell != null && requestIdcell.Value != null)
