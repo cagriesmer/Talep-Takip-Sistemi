@@ -38,14 +38,14 @@ Projede .NET Framework 4.7.2 kullanılmıştır. Ayrıca 4.8 sürümü ile de uy
 - Giriş ekranı
 <img src = "Images/1girisEkranı.png"/>
 
-- Personel ana sayfa
-<img src = "Images/2.png"/>
+- Personel ana sayfa (Listelenen talepler örnektir.)
+<img src = "Images/2PersonelAnaSayfa.png"/>
 
 - Talep girişi
 <img src = "Images/3talepEkleme.png"/>
 
-- Yönetici ana sayfa
-<img src = "Images/4.png"/>
+- Yönetici ana sayfa (Listelenen talepler örnektir.)
+<img src = "Images/4YoneticiAnaSayfa.png"/>
 
 - Kullanıcı ekleme
 <img src = "Images/5yeniKullanıcıEkleme.png"/>
