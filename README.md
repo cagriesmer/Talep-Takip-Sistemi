@@ -1,5 +1,5 @@
 # Talep Takip Sistemi
-Bu proje, C# Windows Forms kullanılarak geliştirilmiş bir Telep Takip Sistemi uygulamasıdır. Telefonla iletilen talep, rica veya isteklerin kaydının tutulamaması nedeniyle bu programa ihtiyaç duyulmuştur. Program kurumdaki ortak sunucuda bulunan MySQL veritabanına bağlanarak diğer kullanıcılar tarafından kullanılabilmektedir.
+Bu proje, C# Windows Forms kullanılarak geliştirilmiş bir Talep Takip Sistemi uygulamasıdır. Telefonla iletilen talep, rica veya isteklerin kaydının tutulamaması nedeniyle bu programa ihtiyaç duyulmuştur. Program kurumdaki ortak sunucuda bulunan MySQL veritabanına yerel ağ üzerinden bağlanarak diğer kullanıcılar tarafından kullanılabilmektedir.
 
 ## 🔹 Özellikler
 - Program içerisinde "Personel" ve "Yönetici" rolleri bulunmaktadır. Bu rollere göre programda yapılabilecek işlemler değişmektedir.
