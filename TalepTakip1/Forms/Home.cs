@@ -95,14 +95,14 @@ namespace TalepTakip
                 guna2DataGridView1.Rows[rowIndex].Cells["Column9"].Value = request.Description;
                 guna2DataGridView1.Rows[rowIndex].Cells["Column10"].Value = request.CompDate;
 
-                // Talep durumuna göre satır rengini ayarla
+                // Talep durumuna göre satır rengini ayarla- beklemede ise sarı yap
                 if (request.State == "Beklemede")
                 {
                     guna2DataGridView1.Rows[rowIndex].DefaultCellStyle.BackColor = Color.Yellow;
                 }
             }
 
-            // DataSource'u ayarladıktan veya verileri yükledikten sonra: Tarihe göre sırala
+            // DataSource'u ayarladıktan veya verileri yükledikten sonra tarihe göre sırala
             guna2DataGridView1.Sort(guna2DataGridView1.Columns["Column4"], System.ComponentModel.ListSortDirection.Descending);
 
             // listedeki seçimi kaldır
@@ -112,10 +112,10 @@ namespace TalepTakip
         // DataGridView'de onayla butonuna tıklandığında
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Geçerli bir hücreye tıklanıp tıklanmadığını kontrol edin
+            // Geçerli bir hücreye tıklanıp tıklanmadığının kontrolü
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                // Tıklanan hücrenin "Column6" olup olmadığını kontrol edin (Onayla butonu)
+                // Tıklanan hücrenin "Column6" olup olmadığının kontrolü (Onayla butonu)
                 if (guna2DataGridView1.Columns[e.ColumnIndex].Name == "Column6")
                 {
                     var cell = guna2DataGridView1.Rows[e.RowIndex].Cells["Column5"]; // Seçilen satırın talep durumunu al
